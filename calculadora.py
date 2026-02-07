@@ -9,6 +9,7 @@ print("3. Multiplicar: *")
 print("4. Dividir: /")
 operacion = input("ingrese el simbolo de la operacion que desea realizar:")
 
+print("nuenas tardes")
 
 
 if operacion == "+":
@@ -50,3 +51,5 @@ def multiplicar(a, b):
     pass
 def dividir(a, b):
     pass
+
+
