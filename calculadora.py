@@ -7,9 +7,11 @@ print("1. Sumar: +")
 print("2. Restar: -")
 print("3. Multiplicar: *")
 print("4. Dividir: /")
+
 operacion = input("ingrese el simbolo de la operacion que desea realizar:")
 
 print("nuenas tardes")
+
 
 
 if operacion == "+":
@@ -52,4 +54,31 @@ def multiplicar(a, b):
 def dividir(a, b):
     pass
 
+
+
+
+
+# Dónde está el bug
+
+try:
+    password = int(input("Clave: "))
+
+# Agregar prints para investigar
+
+    print(f"DEBUG tipo: {type(password)}")
+
+    print(f"DEBUG valor: [{password}]")
+
+    print(f"DEBUG len: {len(str(password))}")
+    
+    if password == 1234: # ahora si
+        print("Acceso concedido")
+
+    else:
+    
+        print("Acceso denegado")
+except ValueError:
+    
+    print("Error: debe ingresar un número")
+    
 
