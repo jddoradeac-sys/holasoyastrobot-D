@@ -71,7 +71,7 @@ try:
 
     print(f"DEBUG len: {len(str(password))}")
     
-    if password == 1234: # ahora si
+    if password == 1234: # bug aca y ahora si
         print("Acceso concedido")
 
     else:
